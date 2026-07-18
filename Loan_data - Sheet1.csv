@@ -1,0 +1,4 @@
+Loan_ID,Gender,Married,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Credit_History,Loan _Status
+LP001,Male,yes,Graduate,No,15000,2000,150,1,Y
+LP002,Male,yes,Graduate,No,5000,3000,100,1,N
+LP003,Female,No,H.S,YES,10000,4000,200,1,Y
