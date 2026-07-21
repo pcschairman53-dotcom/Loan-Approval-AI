@@ -36,6 +36,15 @@ app = FastAPI(
     description="Predict loan approval status and probability using a trained logistic regression model.",
     version="1.0.0",
 )
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],   # পরে চাইলে তোমার Vercel domain দিতে পারো
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 pipeline, target_encoder, feature_columns = load_model()
 
